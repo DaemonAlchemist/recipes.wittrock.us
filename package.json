@@ -5,7 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "deploy": "aws s3 sync . s3://recipes.wittrock.us --acl public-read",
+    "deploy-only": "aws s3 sync ./dist s3://recipes.wittrock.us --acl public-read",
+    "deploy": "yarn build && yarn deploy-only && yarn refresh",
+    "refresh": "aws cloudfront create-invalidation --distribution-id E6NJ8LW8LZVP --paths \"/*\"",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"

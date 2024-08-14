@@ -35,13 +35,16 @@ h1 {
     font-size: xx-large;
     margin: 0;
     text-align: center;
+    border-bottom: solid 2px;
   }
   .ingredientList {
-    list-style-type: none;
     font-size: x-large;
-    padding: 0;
-    li {
+    margin-bottom: 32px;
+    td, th {
       padding: 8px;
+    }
+    td {
+      text-align: right;
     }
   }
   .stepList {

@@ -4,7 +4,7 @@ export const pastaSalad:IRecipe = {
     name: "Pasta Salad",
     ingredients: [
         ["1", "pound", "tri-colored spiral pasta"],
-        ["6", "tablespoons", "salad seasoning mix"],
+        ["6", "tbsp", "salad seasoning mix"],
         ["1", "bottle", "Italian-style salad dressing"],
         ["2", "cups", "cherry tomatoes", "diced"],
         ["1", "", "green bell pepper", "chopped"],

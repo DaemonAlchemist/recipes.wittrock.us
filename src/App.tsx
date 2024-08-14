@@ -17,11 +17,13 @@ const Recipe = () => {
     <img src={recipe.picture || missingImage} alt={recipe.name} />
 
     <h2>Ingredients</h2>
-    <ul className={styles.ingredientList}>
-      {recipe.ingredients.map((ingredient, i) => <li key={i} className={styles.ingredient}>
-        {ingredient[0]} {ingredient[1]} {ingredient[2]} <em>{ingredient[3]}</em>
-      </li>)}
-    </ul>
+    <table className={styles.ingredientList}>
+      <tbody>
+        {recipe.ingredients.map((ingredient, i) => <tr key={i} className={styles.ingredient}>
+          <td>{ingredient[0]} {ingredient[1]}</td> <th>{ingredient[2]}</th> <td><em>{ingredient[3]}</em></td>
+        </tr>)}
+      </tbody>
+    </table>
 
     <h2>Steps</h2>
     <ol className={styles.stepList}>
