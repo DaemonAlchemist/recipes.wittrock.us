@@ -41,6 +41,12 @@ h1 {
   .ingredientList {
     font-size: x-large;
     margin-bottom: 32px;
+    width: 100%;
+    border-collapse: collapse;
+    border-bottom: solid 2px;
+    tr:nth-child(2n) {
+      background-color: #f0f0f0;
+    }
     td, th {
       padding: 8px;
     }
@@ -51,7 +57,10 @@ h1 {
   .stepList {
     font-size: x-large;
     li {
-      margin: 16px;
+      padding: 8px;
+      &:nth-child(2n) {
+        background-color: #f0f0f0;
+      }
     }
   }
 }
