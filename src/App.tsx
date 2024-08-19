@@ -20,7 +20,7 @@ const Recipe = () => {
     <table className={styles.ingredientList}>
       <tbody>
         {recipe.ingredients.map((ingredient, i) => <tr key={i} className={styles.ingredient}>
-          <td>{ingredient[0]} {ingredient[1]}</td> <th>{ingredient[2]}</th> <td><em>{ingredient[3]}</em></td>
+          <td>{ingredient[0]}</td><td>{ingredient[1]}</td> <th>{ingredient[2]}</th> <td><em>{ingredient[3]}</em></td>
         </tr>)}
       </tbody>
     </table>
